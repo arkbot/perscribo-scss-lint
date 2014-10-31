@@ -4,7 +4,7 @@ module Perscribo
   module Support
     module Guard
       module SCSSLint
-        REQ_PATH = File.expand_path('/../../scss-lint/reporter.rb', __FILE__)
+        REQ_PATH = File.expand_path('../../../scss-lint/reporter.rb', __FILE__)
         OUT_PATH = "#{Dir.pwd}/tmp/perscribo_scsslint_#{ENV['RACK_ENV']}.log"
         DEFAULTS = {
           labels: [:info, :failure, :success],
@@ -12,7 +12,7 @@ module Perscribo
             all_on_start: false,
             cli: [
               "--require #{REQ_PATH}",
-              '--format Perscribo::SCSSLint::Reporter',
+              '--format Perscribo',
               "--out #{OUT_PATH}"
             ].join(' '),
             notification: true
