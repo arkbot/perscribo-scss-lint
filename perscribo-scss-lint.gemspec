@@ -34,7 +34,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'terminal-notifier-guard'
 
   spec.add_dependency 'colorize'
-  spec.add_dependency 'scss-lint', '~> 0.29.0'
+  spec.add_dependency 'scss-lint', '~> 0.30.0'
   
   spec.add_dependency 'perscribo'
 end
